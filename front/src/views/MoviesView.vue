@@ -6,7 +6,7 @@
         v-for="genre in genres"
         :key="genre.id"
         :class="{ 'selected': genre.id === selectedGenre }"
-        @click="selectGenre(genre.id)"
+        @click="selectGenre(genre.id)" 
       >
         {{ genre.name }}
       </div>

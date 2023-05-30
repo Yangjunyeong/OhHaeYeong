@@ -7,7 +7,7 @@
           <img v-if="movie && movie.poster_path" :src="`https://image.tmdb.org/t/p/original${movie.poster_path}`" alt="image">
         </div>
       </div>
-    </div>
+    </div> 
     
     <!-- 트레일러 영상 -->
     <div class="col">

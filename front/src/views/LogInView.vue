@@ -1,7 +1,7 @@
 <template>
   <div class="login ">
-  <div class="container col-xl-10 col-xxl-8 px-4 py-5 ">
-    <div class="row align-items-center g-lg-5 py-5">
+  <div class="container  ">
+    <div class="row align-items-center py-5">
       <div class="col-lg-7 text-center text-lg-start">
         <img class="col-lg-10 img1" src="@/assets/jaesoo.jpg" alt="오태식">
         <h2 class="text-white display-4 fw-bold lh-1 mb-3">로그인</h2>

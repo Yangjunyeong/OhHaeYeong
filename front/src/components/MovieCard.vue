@@ -46,7 +46,7 @@ export default {
         name: 'DetailView',
         params: {
           id: movie.id,
-          movie: movie,
+          movie: movie, 
         },
       });
     },

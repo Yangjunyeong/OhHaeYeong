@@ -40,7 +40,7 @@
                   <img src="@/assets/byeong.jpg" class="card-img-top" alt="...">
                   <!-- <div class="card-body"> -->
                     <h5 class="text-bg-success p-3">고맙다... 태식아</h5>
-                    <router-link class="text-bg-success p-3" :to="{ name: 'DetailView', params:{ id: randomMovie.id} }">영화 자세히 보기</router-link>
+                    <button class="text-bg-success" @click="ToDetail(randomMovie)">영화 자세히 보기</button>
                     
                   <!-- </div> -->
                 </div>
@@ -125,6 +125,15 @@ export default {
     },
   },
   methods: {
+    ToDetail(randomMovie) {
+      this.$router.push({
+        name: 'DetailView',
+        params: {
+          id: randomMovie.id,
+          movie: randomMovie, 
+        },
+      });
+    },
     fetchRandomMovie() {
       if (this.selectedGenre === null) {
         alert("장르를 선택하시오");
